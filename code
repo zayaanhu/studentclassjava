@@ -1,0 +1,136 @@
+
+/**
+ * this "program" is creating a student with certain charicteristics which
+ * I have created.
+ * @author Zayaan Hussain
+ * @version 0.007 9-20-2021
+ */
+public class Student
+{
+    /**
+     * these are basicly untouchable variables which can not be touched by any other
+     * aspect of the program. I am using them to define charicteristics of the 
+     * student I have made.
+     */
+
+    private int ageInMonths;
+    private String firstName;
+    private char lastNameInitial;
+    private double heightInInches;
+    private boolean isFemale;
+
+    /**
+     * This is an empty (default) constructer for the variables of the student.
+     */
+    public Student() {
+
+    }
+
+    /**
+     *this is pretty much what is going to be user-inputted, making your own
+     *"student".
+     */
+    public Student (String f, char l, boolean i, int a, double heightInInches) {
+        this.firstName = f;
+        this.lastNameInitial = l;
+        this.isFemale = i;
+        this.heightInInches = heightInInches;
+        this.ageInMonths = a;
+    }
+
+    /** 
+     * pretty much a accessor of the fields of student i have
+     * the fields it will acces are the students hieght 
+     * 
+     * @return Students height
+     */
+
+    public double getHeightInInches() {
+        return heightInInches;
+    }
+
+    /**
+     * This is a mutator which will allow me to set a new value to the
+     * variable studentHeight
+     */
+    public void setStudentHeight(double newStudentHeight) {
+        heightInInches = newStudentHeight;
+    }
+
+    /** 
+     * pretty much a accessor of the fields of student i have
+     * the fields it will acces are the students age
+     * 
+     * @return Students age
+     */
+
+    public int getAgeInMonths() {
+        return ageInMonths;
+    }
+
+    /**
+     * This is a mutator which will allow me to set a new value to the
+     * variable Age
+     */
+    public void setAgeInMonths(int newAgeInMonths) {
+        ageInMonths = newAgeInMonths;
+    }
+
+    /** 
+     * pretty much a accessor of the fields of student i have
+     * the fields it will access are the students gender
+     * 
+     * @return is Female
+     */
+
+    public boolean getIsFemale() {
+        return isFemale;
+    }
+
+    /**
+     * This is a mutator which will allow me to set a new value to the
+     * variable isFemale
+     */
+    public void setIsFemale(boolean newIsFemale) {
+        isFemale = newIsFemale;
+    }
+
+    /** 
+     * pretty much a accessor of the fields of student i have
+     * the fields it will access are the students firstName
+     * 
+     * @return firstName
+     */
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    /**
+     * This is a mutator which will allow me to set a new value to the
+     * variable firstName
+     */
+    public void setFirstName(String newFirstName) {
+        firstName = newFirstName;
+    }
+
+    /** 
+     * pretty much a accessor of the fields of student i have
+     * the fields it will access are the students firstName
+     * 
+     * @return lastNameInitial
+     */
+
+    public char getLastNameInitial() {
+        return lastNameInitial;
+    }
+
+    /**
+     * This is a mutator which will allow me to set a new value to the
+     * variable lastNameInitial
+     */
+    public void getLastNameInitial(char newLastNameInitial) {
+        lastNameInitial = newLastNameInitial;
+    }
+
+}
