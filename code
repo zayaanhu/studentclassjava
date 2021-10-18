@@ -2,7 +2,7 @@
 /**
  * this "program" is creating a student with certain charicteristics which
  * I have created.
- * @author Zayaan Hussain
+ * @author zayaanhu
  * @version 0.007 9-20-2021
  */
 public class Student
